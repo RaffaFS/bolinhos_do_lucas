@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cinzel", serif;
+}
+
+.background_bottom{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 32vh 0vh;
+}
+
+.header{
+    background-image: url(../img/background_top.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    height: 100%;
+    max-height: 40vh;
+
+    h2{font-size: 28px;}
+    h3{font-size: 20px;}
+    h4{font-size: 16px;}
+    h5{font-size: 14px;}
+
+    .container{
+        max-width: 420px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        padding-top: 20vh;
+
+        @media (max-width: 768px){
+            max-width: 280px;
+        }
+
+        .perfil{
+
+            .hidden{display: none;}
+
+            img{
+                position: absolute;
+                max-width: 280px;
+                border-radius: 42%;
+                position: relative;
+                box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, .6);
+                transition: all 1s ease;
+
+                @media (max-width: 768px){
+                    max-width: 210px;
+                    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .6);
+                }
+            }
+
+            .texto{
+                margin-top: 16px;
+
+                @media (max-width: 768px){
+                    margin-top: 14px;
+                    
+                    h2{font-size: 24px;}
+                    h3{font-size: 18px;}
+                }
+            }
+        } 
+        
+
+        .links{
+            margin-top: 48px;
+            display: flex;
+            justify-content: space-evenly;
+
+            @media (max-width: 768px){
+                margin-top: 32px;
+            }
+
+            img{
+                width: 64px;
+                border: solid transparent 5px;
+                transition: all ease 0.2s;
+                border-radius: 50%;
+
+                @media (max-width: 768px){
+                    width: 52px;
+                }
+
+                &:hover{
+                    width: 64px;
+                    border: solid transparent 1px;
+
+                    @media (max-width: 768px){
+                        width: 52px;
+                    }
+                }
+            }
+        }
+
+        .footer{
+            margin-top: 16px;
+            margin-bottom: 4vh;
+
+            @media (max-width: 768px){
+                margin-top: 8px;
+
+                h4{font-size: 14px;}
+                h5{font-size: 12px;}
+            }
+        }
+    }
+}
