@@ -10,34 +10,43 @@
     <link rel="stylesheet" href="styles/main.scss">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
+    <div class="header">
+        <section class="container">
             <div class="perfil">
-                <img class="imgProfile" src="img/perfil.jpg" alt="foto de perfil">
-                <img class="imgProfile hidden" src="img/code.png" alt="foto de perfil">
-                <div class="texto">
-                    <h2 class="text">Bolinhos Artesanais</h2>
-                    <h3 class="text">Lucas G. Ribeiro</h3>
+                <div class="flip_card">
+                    <div class="flip_card__inner">
+                        <div class="flip_card__inner__front">
+                            <img class="flip_card__img" src="img/perfil.jpg" alt="foto de perfil">
+                        </div>
+                        <div class="flip_card__inner__back">
+                            <img class="flip_card__img" src="img/code.png" alt="QR Code">
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="text">
+                <h2 class="texto">Bolinhos Artesanais</h2>
+                <h3 class="texto">Lucas G. Ribeiro</h3>
             </div>
     
             <div class="links">
                 <a href="https://www.instagram.com/bolinhosdo.lucas/">
-                    <img src="img/instagram-svgrepo-com.svg" alt="instagram">
+                    <img class="svg" src="img/instagram-svgrepo-com.svg" alt="instagram">
                 </a>
                 <a href="https://wa.me/47997807564?text=Olá,%20gostaria%20de%20encomendar%20um%20bolinho%20de%20pote!%20&#127856">
-                    <img src="img/whatsapp-svgrepo-com.svg" alt="whatsapp">
+                    <img class="svg" src="img/whatsapp-svgrepo-com.svg" alt="whatsapp">
                 </a>
                 <a href="bolos.html">
-                    <img src="img/cake-bank-svgrepo-com.svg" alt="bolos">
+                    <img class="svg" src="img/cake-bank-svgrepo-com.svg" alt="bolos">
                 </a>
             </div>
-        </div>
-        <div class="footer">
-            <h4 class="text">Encomende já seu bolinho artesanal!</h4>
-            <h5 class="text">"Clique nos botões para interagir"</h5>
-        </div>
-    </header>
+        </section>
+
+        <section class="bottom_text">
+            <h4 class="texto">Encomende já seu bolinho artesanal!</h4>
+            <h5 class="texto">"Clique nos botões para interagir"</h5>
+        </section>
+    </div>
     <div class="background_bottom"></div>
 </body>
 <script src="scripts/code.jquery.com_jquery-3.7.1.min.js"></script>

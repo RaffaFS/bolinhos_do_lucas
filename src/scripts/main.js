@@ -1,15 +1,5 @@
 $(document).ready(function(){
 
-    // Capta um click na imagem ".imgProfile" ativa, aplica a classe hidden nessa e remove a classe hidden da ".imgProfile" inativa
-    $('.imgProfile').click(function(){
-        const imgChange = $('.imgProfile')
-        imgChange.toggleClass('flip');
-
-        setTimeout(function(){
-            imgChange.toggleClass('hidden');
-        }, 350)
-    });
-
     // Com window eu seleciono o objeto (no caso a janela do navegador)
     // .bind vincula a função anonima (já que não possui trigger como .hover ou .click, por exemplo) com o manipulador de evento 'resize'
     // A função em si é uma verificação que aplicará ou removerá uma classe em body de acordo com o resultado.

@@ -1,0 +1,29 @@
+//___Fontes___
+$big: 40px;
+$medium: 24px;
+$small: 20px;
+$xsmall: 16px;
+$bigMobile: 28px;
+$mediumMobile: 18px;
+$smallMobile: 16px;
+$xsmallMobile: 12px;
+
+h2{font-size: $big;}
+h3{font-size: $medium;}
+h4{font-size: $small;}
+h5{font-size: $xsmall;}
+
+@media (max-width: 768px){
+    h2{font-size: $bigMobile;}
+    h3{font-size: $mediumMobile;}
+    h4{font-size: $smallMobile;}
+    h5{font-size: $xsmallMobile;}
+}
+
+//___Regra de font-size pós rotação mobile___
+.virado{
+    h2{font-size: $bigMobile;}
+    h3{font-size: $mediumMobile;}
+    h4{font-size: $smallMobile;}
+    h5{font-size: $xsmallMobile;}
+}
