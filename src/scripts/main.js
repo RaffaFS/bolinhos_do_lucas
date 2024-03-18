@@ -5,9 +5,4 @@ $(document).ready(function(){
         foto.toggleClass('hidden');
         codigo.toggleClass('hidden');
     });
-    $(window).on("orientationchange", function(){
-        if (window.orientation !== 90 && window.orientation !== -90){
-            screen.orientation.lock("portrait")
-        }
-    })
 });
