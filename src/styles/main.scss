@@ -16,13 +16,6 @@
     padding: 30vh 0vh;
 }
 
-.virado {
-    -webkit-transform: rotate(90deg);               //-webkit é o prefixo utilizado para o motor de render WebKit (Google e Safari)
-    -moz-transform: rotate(90deg);                  //-moz é o prefixo utilizado para o motor de render do Mozila Firefox
-    -o-transform: rotate(90deg);                    //-o é o prefixo utilizado para o motor de render do Opera
-    transform: rotate(90deg);                       // versão padrão, sem prefixo, utilizada por navegadores modernos
-}
-
 .header{
     background-image: url(../img/background_top.jpg);
     background-size: cover;
@@ -135,4 +128,8 @@
             margin-bottom: 4vh;
         }    
     }
+}
+
+.virado{
+    
 }
