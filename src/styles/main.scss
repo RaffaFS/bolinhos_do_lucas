@@ -121,15 +121,39 @@
                     }
                 }
             }
-        }
-
-        .footer{
-            margin-top: 16px;
-            margin-bottom: 4vh;
-        }    
+        }   
     }
 }
 
+.footer{
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 4vh;
+    max-width: 420px;
+    text-align: center;
+} 
+
 .virado{
-    
+    .container{
+        display: flex;
+        max-width: 70vw;
+        justify-content: space-evenly;
+
+        .perfil{
+            text-align: start;
+
+            img{
+                max-width: 240px;
+            }
+        }
+
+        .links{
+            align-items: end;
+            width: 32%;
+        }
+    }
+
+    .footer{
+        margin-top: 32px;
+    }
 }
