@@ -145,7 +145,7 @@
 
 //
 //___Regras animação do flip card___
-.flip_card:hover .flip_card__inner{
+.flip_card:active .flip_card__inner{
     transform: rotateY(-180deg);
 }
 .flip_card__inner{
