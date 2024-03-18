@@ -19,7 +19,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    padding: 30vh 0vh;
+    padding-top: 100vh;
 }
 
 //
@@ -29,7 +29,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    max-height: 40vh;
+    max-height: 36vh;
 
     .container{
         max-width: 420px;
@@ -164,12 +164,12 @@
         .perfil{
                 position: relative;
                 max-width: 160px;
-                left: -16vw;
+                left: -12vw;
             }
 
         .texto{
             position: relative;
-            left: -16vw;
+            left: -12vw;
             top: -10vh;
             text-align: start;
         }
@@ -177,13 +177,13 @@
         .links{
             width: 32%;
             position: relative;
-            left: 32vw;
+            left: 36vw;
             top: 16vh;
         }
     }
 
     .bottom_text{
         position: relative;
-        top: 20vh;
+        top: 24vh;
     }
 }
