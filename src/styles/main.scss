@@ -36,10 +36,7 @@
         margin: 0 auto;
         text-align: center;
         position: relative;
-
-        @media (max-width: 2560px){
-            padding-top: 30vh;
-        }
+        padding-top: 24vh;
 
         @media (max-width: 1440px){
             padding-top: 21vh;
@@ -66,7 +63,7 @@
                 &__inner{
                     position: relative;
 
-                    &__front, &__back{
+                    &__back, &__front{
                         position: absolute;
                     }
                 }
@@ -87,11 +84,7 @@
 
         .text{
             position: relative;
-            top: 44vh;
-
-            @media (max-width: 2560px){
-                top: 24vh;
-            }
+            top: 40vh;
     
             @media (max-width: 1440px){
                 top: 32vh;
@@ -108,7 +101,7 @@
 
         .links{
             position: relative;
-            top: 48vh;
+            top: 44vh;
             display: flex;
             justify-content: space-evenly;
             @media (max-width: 768px){
@@ -136,9 +129,10 @@
             }
         }   
     }
+
     .bottom_text{
         position: relative;
-        top: 50vh;
+        top: 46vh;
         margin: 0 auto;
         margin-bottom: 4vh;
         text-align: center;
@@ -149,6 +143,20 @@
     }
 }
 
+//
+//___Regras animação do flip card___
+.flip_card:hover .flip_card__inner{
+    transform: rotateY(-180deg);
+}
+.flip_card__inner{
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flip_card__inner__front{
+    backface-visibility: hidden;
+}
+
+//
 //___Regras exclusivas para pós resize da window (rotação de dispositivo mobile)___
 .virado{
     .container{
